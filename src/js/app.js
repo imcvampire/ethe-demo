@@ -24,30 +24,17 @@ App = {
   },
 
   initWeb3: function() {
-    // Is there an injected web3 instance?
-    if (typeof web3 !== 'undefined') {
-      App.web3Provider = web3.currentProvider;
-    } else {
-      // If no injected web3 instance is detected, fall back to Ganache
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
-    }
-    web3 = new Web3(App.web3Provider);
+    /*
+     * Replace me...
+     */
 
     return App.initContract();
   },
 
   initContract: function() {
-    $.getJSON('Cloth.json', function(data) {
-      // Get the necessary contract artifact file and instantiate it with truffle-contract
-      var ClothArtifact = data;
-      App.contracts.Cloth = TruffleContract(ClothArtifact);
-
-      // Set the provider for our contract
-      App.contracts.Cloth.setProvider(App.web3Provider);
-
-      // Use our contract to retrieve and mark the adopted pets
-      return App.markAdopted();
-    });
+    /*
+     * Replace me...
+     */
 
     return App.bindEvents();
   },
@@ -57,49 +44,19 @@ App = {
   },
 
   markAdopted: function(adopters, account) {
-    var clothInstance;
-
-    App.contracts.Cloth.deployed().then(function(instance) {
-      clothInstance = instance;
-
-      return clothInstance.getClothes.call();
-    }).then(function(clothes) {
-      for (i = 0; i < clothes.length; i++) {
-        if (clothes[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
-        }
-      }
-    }).catch(function(err) {
-      console.log(err.message);
-    });
-
+    /*
+     * Replace me...
+     */
   },
 
   handleAdopt: function(event) {
     event.preventDefault();
 
-    var clothId = parseInt($(event.target).data('id'));
+    var petId = parseInt($(event.target).data('id'));
 
-    var clothInstance;
-
-    web3.eth.getAccounts(function(error, accounts) {
-      if (error) {
-        console.log(error);
-      }
-
-      var account = accounts[0];
-
-      App.contracts.Cloth.deployed().then(function(instance) {
-        clothInstance = instance;
-
-        // Execute adopt as a transaction by sending account
-        return clothInstance.buy(clothId, {from: account});
-      }).then(function(result) {
-        return App.markAdopted();
-      }).catch(function(err) {
-        console.log(err.message);
-      });
-    });
+    /*
+     * Replace me...
+     */
   }
 
 };
