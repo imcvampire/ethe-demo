@@ -12,7 +12,7 @@ contract Shop {
     return clothId;
   }
 
-  // Retrieving the adopters
+  // Retrieving the buyers
   function getBuyers() public view returns (address[16]) {
     return buyers;
   }
