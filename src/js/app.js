@@ -4,16 +4,14 @@ App = {
 
   init: function() {
     // Load cloths.
-    $.getJSON('../clothes.json', function(data) {
+    $.getJSON('clothes.json', function(data) {
+      console.log(data)
       var clothRow = $('#clothRow');
       var clothTemplate = $('#clothTemplate');
 
-      for (i = 0; i < data.length; i ++) {
+      for (var i = 0; i < data.length; i ++) {
         clothTemplate.find('.panel-title').text(data[i].name);
         clothTemplate.find('img').attr('src', data[i].picture);
-        // clothTemplate.find('.cloth-breed').text(data[i].breed);
-        // clothTemplate.find('.cloth-age').text(data[i].age);
-        // clothTemplate.find('.cloth-location').text(data[i].location);
         clothTemplate.find('.btn-buy').attr('data-id', data[i].id);
 
         clothRow.append(clothTemplate.html());
