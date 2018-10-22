@@ -1,130 +1,82 @@
 [
   {
     "id": 0,
-    "name": "Frieda",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama"
+    "name": "Polo Shirt",
+    "picture": "http://i00.i.aliimg.com/wsphoto/v0/359840214/Wholesale-Men-s-Polo-Shirts-Brand-Tshirt-T-Shirt-Tee-Shirt-Polo-Shirt-Fashion-Cotton-Polo.jpg",
   },
   {
     "id": 1,
-    "name": "Gina",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia"
+    "name": "Blue Jeans",
+    "picture": "http://i00.i.aliimg.com/wsphoto/v0/882138636/Mens-capri-jeans-Light-blue-Skinny-Whisker-Abrade-Cotton-Korean-style-Casual-Drop-shipping-1-Piece.jpg"
   },
   {
     "id": 2,
-    "name": "Collins",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Freeburn, Idaho"
+    "name": "Made in JAPAN denime (wide straight)",
+    "picture": "http://img5.zozo.jp/goodsimages/251/2814251/2814251_33_D_215.jpg"
   },
   {
     "id": 3,
-    "name": "Melissa",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Camas, Pennsylvania"
+    "name": "Quần Áo Thu Đông",
+    "picture": "https://cf.shopee.vn/file/8b1114000699aee35c00de4124446b5d"
   },
   {
     "id": 4,
-    "name": "Jeanine",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Gerber, South Dakota"
+    "name": "Quần Áo Thu Đông 2",
+    "picture": "https://cf.shopee.vn/file/1378983464de137d12f74f7a7862c32c"
   },
   {
     "id": 5,
-    "name": "Elvia",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois"
+    "name": "Quần Áo Thu Đông 3",
+    "picture": "https://cf.shopee.vn/file/67eb25107e5886e3bbb7489ecdeb8ac3"
   },
   {
     "id": 6,
-    "name": "Latisha",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana"
+    "name": "QUẦN ÁO THỂ THAO",
+    "picture": "https://cf.shopee.vn/file/7bcd88fa254e6087e2e47730ada0ebe2"
   },
   {
     "id": 7,
-    "name": "Coleman",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau"
+    "name": "QUẦN ÁO THỂ THAO 2",
+    "picture": "https://cf.shopee.vn/file/486a19a3a6996c8695e8b2648c3056d4"
   },
   {
     "id": 8,
-    "name": "Nichole",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii"
+    "name": "QUẦN ÁO THỂ THAO 3",
+    "picture": "https://cf.shopee.vn/file/96cf36406f38723a36741829bb864e9a"
   },
   {
     "id": 9,
-    "name": "Fran",
-    "picture": "images/boxer.jpeg",
-    "age": 3,
-    "breed": "Boxer",
-    "location": "Matheny, Utah"
+    "name": "Sét đồ bé gái",
+    "picture": "https://cf.shopee.vn/file/8c46ab0669903eaa1405c44b9c17b951"
   },
   {
     "id": 10,
-    "name": "Leonor",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana"
+    "name": "Quần Áo Thu Đông",
+    "picture": "https://cf.shopee.vn/file/45ed094b3eb742a92110f645ab2e5ef9"
   },
   {
     "id": 11,
-    "name": "Dean",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Windsor, Montana"
+    "name": "Quần Áo Võ, Võ Phục Pencaksilat",
+    "picture": "https://cf.shopee.vn/file/3beceaada81d616845e4ea2e803cdd13"
   },
   {
     "id": 12,
-    "name": "Stevenson",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada"
+    "name": "Quần Áo Võ Phục Môn Phái Vovinam",
+    "picture": "https://cf.shopee.vn/file/6144d7596f3aa9bc1a42b011f9ed51ea"
   },
   {
     "id": 13,
-    "name": "Kristina",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 4,
-    "breed": "Golden Retriever",
-    "location": "Sultana, Massachusetts"
+    "name": "VÁY LIỀN ÁO",
+    "picture": "https://cf.shopee.vn/file/d0d0a1c433178e10f2ddac6bee97a317"
   },
   {
     "id": 14,
-    "name": "Ethel",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Broadlands, Oregon"
+    "name": "VÁY LIỀN ÁO 2",
+    "picture": "https://cf.shopee.vn/file/c6b0c33235f5e6adcc08c855ba1a2468"
   },
   {
     "id": 15,
-    "name": "Terry",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
+    "name": "Áo Chun Tay",
+    "picture": "https://cf.shopee.vn/file/587ea9adfadaa3b032b200d9b737b80d"
   }
 ]
