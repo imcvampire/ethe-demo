@@ -57,20 +57,32 @@ App = {
   markBuyed: function(buyers, account) {
     var shopInstance;
 
-    App.contracts.Shop.deployed().then(function(instance) {
-      shopInstance = instance;
-
-      return shopInstance.getBuyers.call();
-    }).then(function(buyers) {
-      for (i = 0; i < buyers.length; i++) {
-        if (buyers[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-cloth').eq(i).find('button').text('Success').attr('disabled', true);
-        }
+    web3.eth.getAccounts(function(error, accounts) {
+      if (error) {
+        console.error(error);
+        return
       }
-    }).catch(function(err) {
-      console.log(err.message);
-    });
 
+      var account = accounts[0];
+
+      App.contracts.Shop.deployed().then(function(instance) {
+        shopInstance = instance;
+
+        return shopInstance.getBuyers.call();
+      }).then(function(buyers) {
+        buyers.forEach((buyer, i) => {
+          if (buyer === account) {
+            $('.panel-cloth').eq(i).find('button').text('Success').attr('disabled', true);
+          } else if (buyers[i] !== '0x0000000000000000000000000000000000000000') {
+            $('.panel-cloth').eq(i).find('button')
+              .text('Bought')
+              .attr('disabled', true);
+            $('.panel-cloth').eq(i).find('.buyer-name')
+              .text('Buyer: ' + buyer);
+          }
+        })
+      }).catch(console.error);
+    })
   },
 
   handleBuy: function(event) {
@@ -82,7 +94,8 @@ App = {
 
     web3.eth.getAccounts(function(error, accounts) {
       if (error) {
-        console.log(error);
+        console.error(error);
+        return
       }
 
       var account = accounts[0];
@@ -94,9 +107,7 @@ App = {
         return shopInstance.buy(clothId, {from: account});
       }).then(function(result) {
         return App.markBuyed();
-      }).catch(function(err) {
-        console.log(err.message);
-      });
+      }).catch(console.error);
     });
   }
 
